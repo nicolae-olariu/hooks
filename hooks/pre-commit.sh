@@ -1,5 +1,3 @@
 #!/bin/sh
 
-echo "pre-commit started"
-ls -alh
-echo "pre-commit finished"
+find . -type f -name "*.js" -exec js-beautify -r {} \;
