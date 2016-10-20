@@ -1,3 +1,3 @@
-# pre-commit.sh
+#!/bin/bash
 
 ls -alh
