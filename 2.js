@@ -1,5 +1,5 @@
 'use strict';
 
 (function() {
-  var a = b = 3;
+    var a = b = 3;
 })();
