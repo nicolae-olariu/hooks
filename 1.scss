@@ -1,11 +1,14 @@
 footer {
-  background-color: #000;
+  background-color: #aaa;
+
   @include respondTo(phone) {
     padding: 35px 0;
   }
   span,
   p {
     color: $meineke-white;
+    text-align: center;
+    z-index: 9900;
   }
   a {
     color: $meineke-white;
@@ -16,19 +19,21 @@ footer {
     }
   }
   .footer-title {
-    margin-bottom: 15px;
     color: $meineke-yellow;
-    text-transform: uppercase;
     font-size: 16px;
     line-height: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
     @include font-family-heavy;
     a {
       color: $meineke-yellow;
     }
   }
   .logo-container {
-    overflow: auto;
     margin-top: 37px;
+    overflow: auto;
+
     @include respondTo(phone) {
       margin-top: 0;
     }
@@ -51,14 +56,16 @@ footer {
     padding: 40px 0 30px;
   }
   .left-block {
-    width: 58.2%;
     border-right: 1px solid #49494e;
+    width: 58.2%;
+
     @include respondTo(phone) {
       padding-bottom: 0;
     }
   }
   .social-block {
     padding-left: 30px;
+
     @include respondTo(phone) {
       overflow: auto;
       padding: 0;
@@ -76,10 +83,10 @@ footer {
     }
   }
   .footer-app {
+    border-top: 1px solid $meineke-white;
     margin-right: 40px;
     margin-top: 30px;
     padding-top: 35px;
-    border-top: 1px solid $meineke-white;
   }
   .footer-app-content {
     overflow: hidden;
@@ -89,28 +96,23 @@ footer {
     }
     .footer-app-title {
       color: $meineke-white;
-      margin-bottom: 10px;
       font-size: 23px;
+      margin-bottom: 10px;
+
       @include font-family-demi;
       @include respondTo(maxTablet) {
         font-size: 16px;
       }
     }
     .footer-app-button {
-      padding-top: 6px;
-      padding-bottom: 6px;
       font-size: 18px;
+      padding-bottom: 6px;
+      padding-top: 6px;
+
       @include font-family-demi;
     }
   }
   .mobile-content {
-    h4 {
-      a {
-        @include respondTo(phone) {
-          text-decoration: underline;
-        }
-      }
-    }
     @include respondTo(phone) {
       padding-left: 15%;
     }
@@ -119,11 +121,18 @@ footer {
       padding-left: 0;
       width: 265px;
     }
+    h4 {
+      a {
+        @include respondTo(phone) {
+          text-decoration: underline;
+        }
+      }
+    }
   }
   // Panel styles
   .panel {
-    border-color: transparent;
     background-color: transparent;
+    border-color: transparent;
   }
   .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top: none;
@@ -133,15 +142,15 @@ footer {
   }
   .panel-default {
     > .panel-heading {
+      background-color: transparent;
+      border-color: transparent;
+      color: #fff;
       display: inline-block;
       padding: 0;
-      border-color: transparent;
-      background-color: transparent;
-      color: #fff;
       h4 {
-        text-transform: uppercase;
         font-size: 18px;
         line-height: 18px;
+        text-transform: uppercase;
       }
       a {
         font-size: 15px;
@@ -154,22 +163,22 @@ footer {
 .brands-block {
   padding: 15px 0;
   h3 {
+    font-size: 14px;
+    font-weight: bold;
     margin: 0;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
   }
   .brands-logos {
     @include flex($wrap: wrap, $justify: space-around);
   }
   a {
-    display: inline-block;
-    margin-right: 5px;
-    height: 50px;
-    width: 100px;
     background-image: url(../resources/images/footer/footer-logos.png);
+    display: inline-block;
     -webkit-filter: grayscale(100%);
-    filter: greyscale(100%);
+            filter: greyscale(100%);
+    height: 50px;
+    margin-right: 5px;
+    width: 100px;
     @for $index from 1 through 10 {
       &:nth-of-type(#{$index}) {
         background-position: $index * (-110px) + 110 0;
@@ -177,7 +186,7 @@ footer {
     }
     &:hover {
       -webkit-filter: grayscale(0%);
-      filter: greyscale(0%);
+              filter: greyscale(0%);
     }
   }
 }
