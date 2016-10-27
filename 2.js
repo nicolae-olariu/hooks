@@ -1,9 +1,11 @@
 'use strict';
 
 (function() {
-  var a = b = 3;
+  var test = {
+    myProperty: 'some prop here'
+  };
 
-  if (true) {
-    console.log('a test');
+  if ({}) {
+    console.log('jus a simple test');
   }
 })();
