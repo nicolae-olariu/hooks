@@ -3,13 +3,9 @@
 (function() {
   var a = b = 3;
 
-  if(true  ){
+  if (true) {
 
-
-
-
-
-console.log('  a test'      );
-        }
+    console.log('  a test');
+  }
 
 })();
