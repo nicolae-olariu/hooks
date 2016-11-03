@@ -24,6 +24,7 @@
     /**
      * Private functions
      */
+
     function postCalculateData() {
       ProfitService.profit(vm.userInfo)
         .then(function(res) {
